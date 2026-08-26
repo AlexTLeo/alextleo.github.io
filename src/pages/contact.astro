@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout sideBarActiveItemID="contact">
+  <div class="pb-12 mt-5 max-w-2xl">
+    <div class="text-4xl font-bold mb-2">Contact Me</div>
+    <p class="mb-4">I'm available for embedded systems, robotics, and consulting. Reach me via:</p>
+
+    <ul class="list-disc ml-6 mb-6">
+      <li>Email: <a class="link" href="mailto:alextleo.business@gmail.com">alextleo.business@gmail.com</a></li>
+      <li>LinkedIn: <a class="link" href="https://www.linkedin.com/in/alex-t-leonardi/" target="_blank" rel="noopener">LinkedIn profile</a></li>
+      <li>GitHub: <a class="link" href="https://github.com/alextleo" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+
+    <p class="mb-4">Alternatively, you can reach me via the contact form below.</p>
+
+    <div class="mb-6">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+        <label class="block">
+          <span class="text-sm font-medium">Name</span>
+          <input name="name" required class="input input-bordered w-full" />
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium">Email</span>
+          <input type="email" name="email" required class="input input-bordered w-full" />
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium">Message</span>
+          <textarea name="message" rows="5" required class="textarea textarea-bordered w-full"></textarea>
+        </label>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+
+      <p class="text-sm text-gray-500 mt-2">Or send an email to <a class="link" href="mailto:alextleo.business@gmail.com">alextleo.business@gmail.com</a></p>
+    </div>
+  </div>
+</BaseLayout>
