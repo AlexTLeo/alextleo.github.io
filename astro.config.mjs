@@ -7,6 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://alextleo.github.io',
   base: '/',
+  outDir: './docs',
   trailingSlash: 'ignore',
   integrations: [mdx(), sitemap(), tailwind()]
 });
