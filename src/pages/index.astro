@@ -19,16 +19,27 @@ const last_posts = posts.slice(0, 3);
         I engineer deterministic C++ embedded drivers, advanced ROS/ROS2 robotics algorithms, and custom telemetry tools for autonomous fleets. From low-level board support to multi-axis manipulator control and large-scale intralogistics debugging, I deliver end-to-end engineering for high-stakes, mission-critical systems.
       </text>
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Contact Me</a>
-      <a href="https://www.linkedin.com/in/alex-t-leonardi/" target="_blank" class="btn btn-outline ml-5">
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a class="btn btn-secondary btn-lg" href="/contact">Contact me</a>
+      <a href="https://www.linkedin.com/in/alex-t-leonardi/" target="_blank" class="btn btn-secondary btn-lg">
         LinkedIn
       </a>
+      <a href="/cv" class="btn btn-primary btn-lg">View CV</a>
     </div>
   </div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  <div class="mt-8 mb-10 rounded-2xl border border-base-300 bg-base-200/50 p-6 shadow-sm">
+    <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+      <div>
+        <div class="text-sm uppercase tracking-[0.18em] text-base-content/60">CV</div>
+        <div class="text-2xl font-bold mt-2">See my full background</div>
+      </div>
+      <a href="/cv" class="btn btn-primary btn-lg">View CV</a>
+    </div>
+  </div>
+
+  <!-- <div>
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
   </div>
 
   <HorizontalCard
@@ -50,12 +61,12 @@ const last_posts = posts.slice(0, 3);
     title="Demo Project 3"
     img="/post_img.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    url="#" 
     badge="FOSS"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from the blog</div>
   </div>
 
   {
@@ -73,4 +84,4 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
-</BaseLayout>
+</BaseLayout> -->
